@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadri Developers</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 300;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            font-weight: 400;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-info a:hover {
+            color: #0056b3;
+        }
+        .real-estate {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .real-estate img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .real-estate img:hover {
+            transform: scale(1.05);
+        }
+        .interactive {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .interactive button {
+            padding: 12px 24px;
+            font-size: 1em;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .interactive button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>KADRI DEVELOPERS</h1>
+</header>
+
+<div class="container">
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:vinodkadri06@gmail.com">vinodkadri06@gmail.com</a></p>
+        <p>Mobile: <a href="tel:+919620494949">9620494949</a></p>
+    </section>
+
+    <section class="real-estate">
+        <h2>Our Projects</h2>
+        <img src="https://wallpapers.com/images/high/real-estate-miniature-house-model-zcovmnik4h0l5s7k.webp" alt="Real Estate Image 1">
+        <img src="https://wallpapers.com/images/hd/real-estate-digital-art-0kmi22tcj2x60lim.jpg" alt="Real Estate Image 2">
+        <img src="https://media.istockphoto.com/id/1409298953/photo/real-estate-agents-shake-hands-after-the-signing-of-the-contract-agreement-is-complete.jpg?s=612x612&w=0&k=20&c=SFybbpGMB0wIoI0tJotFqptzAYK_mICVITNdQIXqnyc=" alt="Real Estate Image 3">
+    </section>
+
+    <section class="interactive">
+        <h2>Sites/Plots Available</h2>
+        <button onclick="showMessage()">Click Me!</button>
+        <p id="message" class="message"></p>
+    </section>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById('message').innerText = "20/30 and 30/40 plots available at Machohalli locality with reasonable price, Please do contact on above Number";
+    }
+</script>
+
+</body>
+</html>
